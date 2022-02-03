@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LicoApp</string>
+    <string name="inventory">Inventory</string>
+    <string name="shipping">Shipping</string>
 </resources>

@@ -5,9 +5,17 @@
         android:enabled="true"
         android:icon="@drawable/ic_list"
         android:title="@string/inventory" />
+
+    <item
+        android:id="@+id/page_add_options"
+        android:enabled="true"
+        android:icon="@drawable/ic_add"
+        android:title="Add" />
+
     <item
         android:id="@+id/page_shipping"
         android:enabled="true"
         android:icon="@drawable/ic_shipping"
         android:title="@string/shipping" />
+
 </menu>

@@ -2,4 +2,6 @@
     <string name="app_name">LicoApp</string>
     <string name="inventory">Inventory</string>
     <string name="shipping">Shipping</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

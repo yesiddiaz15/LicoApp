@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759783547460",
+    "project_id": "licoapp-39250",
+    "storage_bucket": "licoapp-39250.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759783547460:android:439a876321b7a87a259211",
+        "android_client_info": {
+          "package_name": "com.example.licoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759783547460-0s57opso2frbah7se68mvjlctug68cde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFb38YOvlwBHW3Bq5uAPt4r979Hp713fQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759783547460-0s57opso2frbah7se68mvjlctug68cde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

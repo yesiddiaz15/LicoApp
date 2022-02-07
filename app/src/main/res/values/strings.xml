@@ -2,4 +2,7 @@
     <string name="app_name">LicoApp</string>
     <string name="inventory">Inventory</string>
     <string name="shipping">Shipping</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>

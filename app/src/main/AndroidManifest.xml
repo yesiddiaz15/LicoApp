@@ -15,7 +15,7 @@
             android:name=".InventoryActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.view.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>

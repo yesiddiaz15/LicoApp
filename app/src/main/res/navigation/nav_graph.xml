@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_shipping" />
     <dialog
         android:id="@+id/page_add_options"
-        android:name="com.example.licoapp.ModalBottomSheet"
+        android:name="com.example.licoapp.ui.view.ModalBottomSheet"
         android:label="ModalBottomSheet"
         tools:layout="@layout/modal_bottom_sheet_content" />
 </navigation>

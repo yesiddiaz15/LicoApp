@@ -1,6 +1,5 @@
-package com.example.licoapp
+package com.example.licoapp.ui.view
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,7 +28,7 @@ class ModalBottomSheet : BottomSheetDialogFragment() {
         }
 
         binding.inventoryContainer.setOnClickListener {
-            startActivity(Intent(requireContext(),InventoryActivity::class.java))
+            Toast.makeText(requireContext(), "add Inventory", Toast.LENGTH_SHORT).show()
         }
         binding.shippingContainer.setOnClickListener {
             Toast.makeText(requireContext(), "add Shipping", Toast.LENGTH_SHORT).show()

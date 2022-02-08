@@ -1,10 +1,9 @@
-package com.example.licoapp
+package com.example.licoapp.ui.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.licoapp.ui.view.LoginActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {

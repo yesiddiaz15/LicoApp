@@ -9,7 +9,7 @@
         android:id="@+id/page_inventory"
         android:name="com.example.licoapp.ui.view.fragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_inventory" />
     <fragment
         android:id="@+id/page_shipping"
         android:name="com.example.licoapp.ui.view.fragment.ShippingFragment"
@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_shipping" />
     <dialog
         android:id="@+id/page_add_options"
-        tools:layout="@layout/modal_bottom_sheet_content"
         android:name="com.example.licoapp.ModalBottomSheet"
-        android:label="ModalBottomSheet" />
+        android:label="ModalBottomSheet"
+        tools:layout="@layout/modal_bottom_sheet_content" />
 </navigation>

@@ -1,7 +1,6 @@
 package com.example.licoapp.ui.view.fragment
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.licoapp.R
-import com.example.licoapp.databinding.MainFragmentBinding
+import com.example.licoapp.databinding.FragmentInventoryBinding
 import com.example.licoapp.ui.viewModel.MainFragmentViewModel
 
 class MainFragment : Fragment() {
@@ -18,7 +17,7 @@ class MainFragment : Fragment() {
      * according to the need
      */
     private lateinit var mainFragmentViewModel: MainFragmentViewModel
-    private lateinit var binding: MainFragmentBinding
+    private lateinit var binding: FragmentInventoryBinding
 
     companion object {
         fun newInstance() = MainFragment()
@@ -30,10 +29,8 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
 
-
-
         mainFragmentViewModel = ViewModelProvider(this)[MainFragmentViewModel::class.java]
-        binding = DataBindingUtil.inflate(inflater, R.layout.main_fragment, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_inventory, container, false)
         binding.viewModelMainFragment = mainFragmentViewModel
         binding.lifecycleOwner = this
 

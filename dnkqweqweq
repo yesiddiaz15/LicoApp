@@ -1,0 +1,69 @@
+[33mcommit 600cd43b745832aa610fcf24b4676f6bebb29442[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: 8be7454 1f4d704
+Author: Eduar Diaz <eduardiaz@wposs.com>
+Date:   Mon Feb 7 14:27:47 2022 -0500
+
+    Resolve conflicts
+
+[33mcommit 1f4d70420fd64d26a2c07380e5fd5a121c7b0b50[m[33m ([m[1;31morigin/login[m[33m, [m[1;32mlogin[m[33m)[m
+Author: Eduar Diaz <eduardiaz@wposs.com>
+Date:   Mon Feb 7 14:17:52 2022 -0500
+
+    Create login and add firebase auth
+
+[33mcommit 8be74540aef36d75812dd1769278843a9a1f3dc1[m
+Author: juanfelipegarciagomez <juangarcia@wposs.com>
+Date:   Thu Feb 3 14:24:11 2022 -0500
+
+    adjustment
+
+[33mcommit ea9ec7efbe5e3de1fae2ded4b1f76a019fdf8bb0[m
+Merge: 93c6af6 f1069ca
+Author: juanfelipegarciagomez <juangarcia@wposs.com>
+Date:   Thu Feb 3 14:22:13 2022 -0500
+
+    solve conflicts
+
+[33mcommit 93c6af67910ed3694deee07a450327ded5356cfa[m
+Merge: 8bc95b0 a2f0774
+Author: juanfelipegarciagomez <juangarcia@wposs.com>
+Date:   Thu Feb 3 14:17:54 2022 -0500
+
+    solve conflicts
+
+[33mcommit 8bc95b02ad8fedcf160e7cde6a5c7a7a0be05320[m
+Merge: 19505f4 705c33a
+Author: juanfelipegarciagomez <juangarcia@wposs.com>
+Date:   Thu Feb 3 14:15:17 2022 -0500
+
+    solve conflicts
+
+[33mcommit f1069ca205fdb5a113c0e99afdaba1bf8b34e7e8[m[33m ([m[1;31morigin/bottom_navigation[m[33m)[m
+Author: juanfelipegarciagomez <juangarcia@wposs.com>
+Date:   Thu Feb 3 14:09:18 2022 -0500
+
+    add bottom_navigation and icons
+
+[33mcommit 705c33ae8b59571d683e8218a2304c529f0181c1[m
+Author: Eduar Diaz <eduardiaz@wposs.com>
+Date:   Thu Feb 3 12:38:23 2022 -0500
+
+    Add dependencies
+
+[33mcommit a2f077423c86220cb949c1e1efa2b28bfbc3f1b1[m[33m ([m[1;31morigin/splash[m[33m, [m[1;32msplash[m[33m)[m
+Author: Eduar Diaz <eduardiaz@wposs.com>
+Date:   Thu Feb 3 12:28:48 2022 -0500
+
+    The splash image was modified and add base colors
+
+[33mcommit 19505f491115274f42f49c2e6c8b6498f6e4c05a[m
+Author: LAPTOP-H5DHF5EA\juanf <juangarcia@wposs.com>
+Date:   Wed Feb 2 22:31:51 2022 -0500
+
+    splash example
+
+[33mcommit 8f04849453a996b8d1a0905e4c5b03340153860f[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Eduar Diaz <eduardiaz@wposs.com>
+Date:   Wed Feb 2 16:26:33 2022 -0500
+
+    Init app

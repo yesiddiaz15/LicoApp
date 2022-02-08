@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/page_inventory">
+
+    <fragment
+        android:id="@+id/page_inventory"
+        android:name="com.example.licoapp.ui.view.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_inventory" />
+    <fragment
+        android:id="@+id/page_shipping"
+        android:name="com.example.licoapp.ui.view.fragment.ShippingFragment"
+        android:label="fragment_shipping"
+        tools:layout="@layout/fragment_shipping" />
+    <dialog
+        android:id="@+id/page_add_options"
+        android:name="com.example.licoapp.ModalBottomSheet"
+        android:label="ModalBottomSheet"
+        tools:layout="@layout/modal_bottom_sheet_content" />
 </navigation>

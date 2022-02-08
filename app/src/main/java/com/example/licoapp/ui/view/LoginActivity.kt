@@ -1,5 +1,6 @@
 package com.example.licoapp.ui.view
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -9,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.licoapp.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.BuildConfig
 import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
@@ -38,6 +38,7 @@ class LoginActivity : AppCompatActivity() {
                         if (task.isSuccessful) {
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
+                            finish()
                         } else {
                             Toast.makeText(this, "Authentication Failed", Toast.LENGTH_SHORT).show()
                         }
@@ -46,6 +47,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun getVersion(context: Context) {
         var version = ""
         try {
@@ -54,6 +56,6 @@ class LoginActivity : AppCompatActivity() {
         } catch (e: PackageManager.NameNotFoundException) {
             e.printStackTrace()
         }
-        binding.version.text = version
+        binding.version.text = "Version $version"
     }
 }

@@ -12,11 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LicoApp">
         <activity
-            android:name=".InventoryActivity"
-            android:exported="true" />
-        <activity
             android:name=".ui.view.SplashActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,9 +24,11 @@
         </activity>
         <activity
             android:name=".ui.view.MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".ui.view.LoginActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
     </application>
 

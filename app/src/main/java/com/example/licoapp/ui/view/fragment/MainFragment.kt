@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.licoapp.R
 import com.example.licoapp.databinding.FragmentInventoryBinding
-import com.example.licoapp.ui.viewModel.MainFragmentViewModel
+import com.example.licoapp.ui.viewmodel.MainFragmentViewModel
 
 class MainFragment : Fragment() {
     /**

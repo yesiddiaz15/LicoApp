@@ -1,4 +1,4 @@
-package com.example.licoapp.ui.viewModel
+package com.example.licoapp.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

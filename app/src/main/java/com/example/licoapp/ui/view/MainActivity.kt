@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.licoapp.R
 import com.example.licoapp.databinding.ActivityMainBinding
-import com.example.licoapp.ui.viewModel.MainActivityViewModel
+import com.example.licoapp.ui.viewmodel.MainActivityViewModel
 
 class MainActivity : AppCompatActivity() {
 

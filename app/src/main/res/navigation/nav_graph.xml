@@ -19,5 +19,15 @@
         android:id="@+id/page_add_options"
         android:name="com.example.licoapp.ui.view.ModalBottomSheet"
         android:label="ModalBottomSheet"
-        tools:layout="@layout/modal_bottom_sheet_content" />
+        tools:layout="@layout/modal_bottom_sheet_content" >
+        <action
+            android:id="@+id/action_page_add_options_to_page_inventory_add"
+            app:destination="@id/page_inventory_add" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/page_inventory_add"
+        android:name="com.example.licoapp.ui.view.fragment.InventoryAddFragment"
+        android:label="fragment_shipping"
+        tools:layout="@layout/inventory_add_fragment" />
 </navigation>

@@ -2,43 +2,45 @@ package com.example.licoapp.ui.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.licoapp.data.utils.toast
 import com.example.licoapp.databinding.ActivityLoginBinding
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import com.example.licoapp.ui.viewmodel.ERROR
+import com.example.licoapp.ui.viewmodel.LoginActivityViewModel
+import com.example.licoapp.ui.viewmodel.NAVIGATION
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var auth: FirebaseAuth
+    private val loginActivityViewModel: LoginActivityViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.lifecycleOwner = this
+        binding.loginViewModel = loginActivityViewModel
 
-        auth = Firebase.auth
-
-        binding.btnLogin.setOnClickListener {
-            if (binding.etUser.text.isEmpty() || binding.etPassword.text.isEmpty()) {
-                Toast.makeText(this, "Empty Fields", Toast.LENGTH_SHORT).show()
-            } else {
-
-                auth.signInWithEmailAndPassword(
-                    binding.etUser.text.toString(),
-                    binding.etPassword.text.toString()
-                )
-                    .addOnCompleteListener(this) { task ->
-                        if (task.isSuccessful) {
-                            val intent = Intent(this, MainActivity::class.java)
-                            startActivity(intent)
-                        } else {
-                            Toast.makeText(this, "Authentication Failed", Toast.LENGTH_SHORT).show()
-                        }
-                    }
+        loginActivityViewModel.error.observe(this, {
+            when (it) {
+                ERROR.EMPTY_FIELDS -> {
+                    toast("Empty Fields")
+                }
+                ERROR.WRONG_CREDENTIALS -> {
+                    toast("Wrong Credentials")
+                }
             }
-        }
+        })
+
+        loginActivityViewModel.navigation.observe(this, {
+            when (it) {
+                NAVIGATION.GO_MAIN_VIEW -> {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+            }
+        })
     }
 }

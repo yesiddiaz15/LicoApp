@@ -2,27 +2,32 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/page_inventory">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.licoapp.ui.view.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/page_inventory"
+        android:name="com.example.licoapp.ui.view.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_inventory" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.licoapp.ui.view.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
+        android:id="@+id/page_shipping"
+        android:name="com.example.licoapp.ui.view.fragment.ShippingFragment"
+        android:label="fragment_shipping"
+        tools:layout="@layout/fragment_shipping" />
+    <dialog
+        android:id="@+id/page_add_options"
+        android:name="com.example.licoapp.ui.view.ModalBottomSheet"
+        android:label="ModalBottomSheet"
+        tools:layout="@layout/modal_bottom_sheet_content" >
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+            android:id="@+id/action_page_add_options_to_page_inventory_add"
+            app:destination="@id/page_inventory_add" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/page_inventory_add"
+        android:name="com.example.licoapp.ui.view.fragment.InventoryAddFragment"
+        android:label="fragment_shipping"
+        tools:layout="@layout/inventory_add_fragment" />
 </navigation>

@@ -11,10 +11,13 @@ open class BaseViewModel : ViewModel() {
 
 enum class ERROR {
     EMPTY_FIELDS,
-    WRONG_CREDENTIALS
+    WRONG_CREDENTIALS,
+    ERROR_LIQUOR_INVENTORY
 }
 
 enum class SUCCESS {
+    ADD_SUCCESS,
+    CLOSE_SUCCESS
 
 }
 

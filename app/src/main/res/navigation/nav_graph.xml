@@ -29,5 +29,9 @@
         android:id="@+id/page_inventory_add"
         android:name="com.example.licoapp.ui.view.fragment.InventoryAddFragment"
         android:label="fragment_shipping"
-        tools:layout="@layout/inventory_add_fragment" />
+        tools:layout="@layout/inventory_add_fragment" >
+        <action
+            android:id="@+id/action_page_inventory_add_to_page_inventory"
+            app:destination="@id/page_inventory" />
+    </fragment>
 </navigation>
